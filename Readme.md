@@ -2,7 +2,7 @@
 
 > **This project is a work in progress.** Some features are still being implemented and tested. Code may change significantly between commits.
 
-A personal deep-dive into tree data structures — implementing **Binary Search Tree** and **self-balancing AVL Tree** from scratch in plain C++ (structs and functions). Built to understand how these structures actually work under the hood, not just use them from a library.
+A ground-up implementation of **Binary Search Trees** and **self-balancing AVL Tree** in C++. This project focuses on the core mechanics of tree data structures, utilizing custom structs and functions to bypass standard libraries and master low-level memory management and balancing logic.
 
 ---
 
@@ -53,19 +53,6 @@ DSA-Tree-Library-BST-AVL/
 
 ---
 
-## CLI
-
-```
-Tree Library [BST]
-1. Insert  2. Delete  3. Search
-4. InOrder 5. PreOrder 6. PostOrder 7. LevelOrder
-8. Switch BST/AVL  9. Height&Size  0. Exit
-```
-
-Both trees run as independent instances — switching modes with `8` keeps each tree's state intact.
-
----
-
 ## Complexity analysis
 
 | Operation | BST average | BST worst | AVL worst |
@@ -80,7 +67,7 @@ BST degrades to O(n) when inserting a sorted sequence — the tree becomes a lin
 
 ---
 
-## Getting started
+## Setup guide
 
 ```bash
 git clone https://github.com/<your-username>/DSA-Tree-Library-BST-AVL.git
