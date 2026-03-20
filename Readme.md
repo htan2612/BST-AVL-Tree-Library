@@ -2,7 +2,7 @@
 
 > **This project is a work in progress.** Some features are still being implemented and tested. Code may change significantly between commits.
 
-A personal deep-dive into tree data structures — implementing **Binary Search Tree** and **self-balancing AVL Tree** from scratch in plain C++ (structs and functions). Built to understand how these structures actually work under the hood, not just use them from a library.
+A ground-up implementation of **Binary Search Trees** and **self-balancing AVL Tree** in C++. This project focuses on the core mechanics of tree data structures, utilizing custom structs and functions to bypass standard libraries and master low-level memory management and balancing logic.
 
 ---
 
