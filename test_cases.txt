@@ -1,0 +1,100 @@
+=== TEST 01: BST — Insert + inOrder ===
+Insert: 4 2 6 1 3 5 7
+inOrder expected: 1 2 3 4 5 6 7
+
+=== TEST 02: BST — Degenerate tree ===
+Insert: 1 2 3 4 5
+Height expected: 5
+inOrder expected: 1 2 3 4 5
+
+=== TEST 03: BST — Delete leaf node ===
+Insert: 4 2 6
+Delete: 2
+inOrder expected: 4 6
+
+=== TEST 04: BST — Delete node with 1 child ===
+Insert: 4 2 6 1
+Delete: 2
+inOrder expected: 1 4 6
+
+=== TEST 05: BST — Delete node with 2 children ===
+Insert: 4 2 6 1 3
+Delete: 2
+inOrder expected: 1 3 4 6
+
+=== TEST 06: BST — Delete root ===
+Insert: 4 2 6
+Delete: 4
+inOrder expected: 2 6
+
+=== TEST 07: BST — Search found ===
+Insert: 4 2 6
+Search: 2
+expected: Found!
+
+=== TEST 08: BST — Search not found ===
+Insert: 4 2 6
+Search: 9
+expected: Not found
+
+=== TEST 09: BST — Height and Size ===
+Insert: 4 2 6 1 3
+Height expected: 3
+Size expected: 5
+
+=== TEST 10: AVL vs BST — Same input, different height ===
+BST  insert: 3 2 1 → Height expected: 3  preOrder: 3 2 1
+AVL  insert: 3 2 1 → Height expected: 2  preOrder: 2 1 3
+
+=== TEST 11: AVL — LL rotation ===
+insertAVL: 3 2 1
+preOrder expected: 2 1 3   (root = 2, LL rotation fired)
+Height expected: 2
+
+=== TEST 12: AVL — RR rotation ===
+insertAVL: 1 2 3
+preOrder expected: 2 1 3   (root = 2, RR rotation fired)
+Height expected: 2
+
+=== TEST 13: AVL — LR rotation ===
+insertAVL: 3 1 2
+preOrder expected: 2 1 3   (root = 2, LR rotation fired)
+Height expected: 2
+
+=== TEST 14: AVL — RL rotation ===
+insertAVL: 1 3 2
+preOrder expected: 2 1 3   (root = 2, RL rotation fired)
+Height expected: 2
+
+=== TEST 15: AVL — Insert sorted sequence ===
+insertAVL: 1 2 3 4 5
+Height expected: 3
+inOrder expected: 1 2 3 4 5
+
+=== TEST 16: AVL — Delete leaf ===
+insertAVL: 4 2 6
+deleteAVL: 2
+inOrder expected: 4 6
+
+=== TEST 17: AVL — Delete then rebalance ===
+insertAVL: 4 2 6 1 3
+deleteAVL: 6
+inOrder expected: 1 2 3 4
+Height expected: 3
+
+=== TEST 18: Traversals — All 4 on same tree ===
+Insert: 4 2 6 1 3 5 7
+preOrder   expected: 4 2 1 3 6 5 7
+inOrder    expected: 1 2 3 4 5 6 7
+postOrder  expected: 1 3 2 5 7 6 4
+levelOrder expected: 4 2 6 1 3 5 7
+
+=== TEST 19: Empty tree ===
+Insert nothing
+Height expected: 0
+Size expected: 0
+
+=== TEST 20: Duplicate insert (ignored) ===
+Insert: 5 5 5
+Size expected: 1
+inOrder expected: 5
