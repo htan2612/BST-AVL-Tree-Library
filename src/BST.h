@@ -1,7 +1,6 @@
 #pragma once
 #include "Node.h"
 #include<iostream>
-using namespace std;
 
 Node* createNode(int x);
 

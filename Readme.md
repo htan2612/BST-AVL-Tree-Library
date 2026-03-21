@@ -97,7 +97,7 @@ See [`test_cases.txt`](./test_cases.txt) for the full suite.
 
 ## Screenshots
 
-*Will update soon*
+![Test screenshot](./screenshots/screenshot.png)
 
 ---
 

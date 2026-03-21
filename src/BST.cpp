@@ -2,6 +2,7 @@
 #include "BST.h"
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 Node* createNode(int x) {
